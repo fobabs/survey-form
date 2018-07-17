@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS Plugins -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
+  </head>
+  <body>
+    <header id="title">Survey Form</header>
+    <div id="form-body">
+      <p id="description">Please take a few minutes to fill out this research</p>
+      <form method="GET" action="" id="survey-form">
+        <div>
+          <label for="name" id="name-label"><em class="em-text">*</em> Name:</label> 
+          <input type="text" name="name" id="name" placeholder="Enter your name" required />
+        </div>
+        <br/>
+        <div>
+          <label for="email" id="email-label"><em class="em-text">*</em> Email:</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" required />
+        </div> 
+        <br/>
+        <div>
+          <label for="number" id="number-label"><em class="em-text">*</em> Age:</label>
+          <input type="number" name="age" id="number" min="1" max="99" placeholder="Age" required />
+        </div>
+        <br/>
+        <div>
+          <label for="dropdown"><em class="em-text">*</em> Which option best describes you?</label>
+          <select id="dropdown">
+            <option disabled selected>Select an option</option>
+            <option value="student">Student</option>
+            <option value="graduate">Graduate</option>
+            <option value="working-class">Working Class</option>
+          </select>
+        </div>
+        <br/>
+        <div>
+          <label><em class="em-text">*</em> Would you like food delivery to your location?</label>
+          <input type="radio" id="radio-1" name="radio-buttons" value="yes" />
+          <label for="radio-1">Yes</label>
+          <input type="radio" id="radio-2" name="radio-buttons" value="no" />
+          <label for="radio-2">No</label>
+        </div>
+        <br/>
+        <div>
+          <label><em class="em-text">*</em> Food items you would love to be delivered to you (Check all that apply): </label>
+          <input type="checkbox" id="bread" name="choice" value="bread" />
+          <label for="bread">Bread</label>
+          <input type="checkbox" id="meat" name="choice" value="pasta" />
+          <label for="pasta">Pasta</label>
+          <input type="checkbox" id="pasta" name="choice" value="meat" />
+          <label for="meat">Meat</label>
+          <input type="checkbox" id="Rice" name="choice" value="rice" />
+          <label for="rice">Rice</label>
+          <input type="checkbox" id="soup" name="choice" value="soup" />
+          <label for="soup">Soup</label>
+          <input type="checkbox" id="cereals" name="choice" value="cereals" />
+          <label for="cereals">Cereals</label>
+          <input type="checkbox" id="frozen-foods" name="choice" value="frozen-foods" />
+          <label for="frozen-foods">Frozen Foods</label>
+          <input type="checkbox" id="eggs" name="choice" value="eggs" />
+          <label for="eggs">Eggs</label>
+          <input type="checkbox" id="salads" name="choice" value="salads" />
+          <label for="salads">Salads</label>
+          <input type="checkbox" id="dairy" name="choice" value="dairy" />
+          <label for="Dairy">Dairy</label> 
+        </div>
+        <br/>
+        <div>
+          <label for="comments">Any Comments or Suggestions?</label>
+          <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <br/>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
