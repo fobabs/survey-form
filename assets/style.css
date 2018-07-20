@@ -1,13 +1,13 @@
 html, body {
   background-color: #a9d7ef;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   width: 100%;
   height: 100%;
   text-align: center;
   min-width: 320px;
 }
 header {
-  font-size: 2em;
+  font-size: 2.1em;
   font-weight: bold;
   margin: 20px;
 }
@@ -19,6 +19,82 @@ header {
   padding: 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
+.labels {
+  width: 40%;
+  text-align: right;
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px;
+  margin-top: 10px;
+}
+.inputs {
+  width: 52%;
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+}
+.input-field {
+  width: 250px;
+  height: 25px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid rgba(0,0,0,0.19);
+  border-radius: 2px;
+}
+.user-clicks, input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+.dropdown {
+  width: 150px;
+  height: 35px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 16px;
+  border: 1px solid rgba(0,0,0,0.19);
+  border-radius: 2px;
+}
 .em-text {
   color: red;
+}
+#comments {
+  height: 50px;
+}
+#submit {
+  background-color: #a9d7ef;
+  border: 0px solid;
+  border-radius: 4px;
+  height: 40px;
+  width: 100px;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: bold;
+}
+.radio, .checkbox {
+  position: relative;
+  margin-top: 17px;
+}
+@media screen and (max-width: 800px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .inputs {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
 }
