@@ -41,9 +41,9 @@ header {
   border: 1px solid rgba(0,0,0,0.19);
   border-radius: 2px;
 }
-.user-clicks, input[type="checkbox"] {
-  float: left;
-  margin-right: 5px;
+.radio, .checkbox {
+  position: relative;
+  margin-top: 17px;
 }
 .dropdown {
   width: 150px;
@@ -70,10 +70,7 @@ header {
   font-size: 1em;
   font-weight: bold;
 }
-.radio, .checkbox {
-  position: relative;
-  margin-top: 17px;
-}
+/* Media Queries */
 @media screen and (max-width: 800px) {
   .input-field {
     width: 80%;
